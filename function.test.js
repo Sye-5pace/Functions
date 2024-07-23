@@ -8,6 +8,7 @@ test ('it should add two numbers', () => {
     expect(add(5, 5)).toBe(10)
 })
 
-test ('it reverse strings',() => {
-    expect(reverse('hello')).toBe('olleh')
-})
+test('should return the reversed string when given a non-empty string', () => {
+    const result = reverse('hello');
+    expect(result).toBe('olleh');
+});
