@@ -10,9 +10,13 @@ const reverse = (str) => {
     return str.reverse()
 }
 
+const substract = (a, b) => {
+    return a - b;
+}
 
 module.exports = {
     greet: greet,
     reverse: reverse,
-    add: add
+    add: add,
+    substract: substract,
 }
