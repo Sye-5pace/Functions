@@ -7,8 +7,13 @@ const add = (a, b) => {
 }
 
 const reverse = (str) => {
-    return str.reverse()
-}
+    if (str === '') {
+      return '';
+    } else {
+      return reverse(str.slice(1)) + str[0];
+    }
+  };
+
 
 const substract = (a, b) => {
     return a - b;
